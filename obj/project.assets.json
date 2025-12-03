@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oedomwandagbon/Documents/programmeren/hotel_project/hotel_project.csproj",
+      "projectUniqueName": "/Users/oedomwandagbon/Desktop/Back-end development/Github-Clone/Backend-Development/hotel_project.csproj",
       "projectName": "hotel_project",
-      "projectPath": "/Users/oedomwandagbon/Documents/programmeren/hotel_project/hotel_project.csproj",
+      "projectPath": "/Users/oedomwandagbon/Desktop/Back-end development/Github-Clone/Backend-Development/hotel_project.csproj",
       "packagesPath": "/Users/oedomwandagbon/.nuget/packages/",
-      "outputPath": "/Users/oedomwandagbon/Documents/programmeren/hotel_project/obj/",
+      "outputPath": "/Users/oedomwandagbon/Desktop/Back-end development/Github-Clone/Backend-Development/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/oedomwandagbon/.nuget/NuGet/NuGet.Config"
