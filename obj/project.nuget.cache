@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FzBEbC0SAYw=",
+  "dgSpecHash": "XdlMvVM/Pv8=",
   "success": true,
-  "projectFilePath": "/Users/oedomwandagbon/Documents/programmeren/hotel_project/hotel_project.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\hotel_project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Redux Gamer\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\Redux Gamer\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
