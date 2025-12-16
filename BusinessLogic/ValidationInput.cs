@@ -56,7 +56,7 @@ namespace BusinessLogic.ValidationInput
         }
         public string CheckRoomStatus(string status)
         {
-            string[] validStatuses = { "Available", "Occupied", "Maintenance", "Confirmed", "Cancelled", "Completed" };
+            string[] validStatuses = { "Available", "Occupied", "Maintenance", "Cancelled" };
             foreach (var validStatus in validStatuses)
             {
                 if (status == validStatus)
@@ -76,7 +76,7 @@ namespace BusinessLogic.ValidationInput
                     return status;
                 }
             }
-            return "Confirmed"; // Default status
+            return "Pending"; // Default status
         }
     }
 }
