@@ -1,33 +1,26 @@
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Data.SqlClient;
 
-namespace Backend_Development.DataAccess
+namespace Backend_Dev.DataAccess.Database
 {
-    public class DBConnect
+    public class DBConnect : DbContext
     {
-        private string _connectionString = "Data Source=MINECRAFT;Initial Catalog=Test;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Application Name=\"Microsoft SQL Server Management Studio - Query\";Command Timeout=0";
-
-        public SqlConnection GetConnection()
+        public DBConnect(DbContextOptions<DBConnect> options) : base(options)
         {
-            return new SqlConnection(_connectionString);
         }
 
-        public bool TestConnection()
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            try
+            if (!optionsBuilder.IsConfigured)
             {
-                using (SqlConnection connection = GetConnection())
-                {
-                    connection.Open();
-                    Console.WriteLine("Connection successful!");
-                    return true;
-                }
+                optionsBuilder.UseSqlServer("Server=localhost;Database=BackendDevDb;Trusted_Connection=true;");
             }
-            catch (SqlException ex)
-            {
-                Console.WriteLine($"Connection failed: {ex.Message}");
-                return false;
-            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            // Add your entity configurations here
         }
     }
 }
