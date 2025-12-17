@@ -26,5 +26,17 @@ namespace BusinessLogic.Classes
         }
 
 
+    public string HashPassword(string password)
+    {
+        // Placeholder for password hashing logic
+        return password; // Replace with actual hash
+    }
+
+    public bool Authenticate(string password)
+    {
+        // Placeholder for password hash comparison logic
+        return PasswordHash == HashPassword(password);
+    }
+
     }
 }
