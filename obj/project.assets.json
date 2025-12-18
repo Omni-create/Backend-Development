@@ -3788,11 +3788,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\ASP.net\\Backend-Dev\\Backend-Dev.csproj",
+      "projectUniqueName": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Backend-Dev.csproj",
       "projectName": "Backend-Dev",
-      "projectPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\ASP.net\\Backend-Dev\\Backend-Dev.csproj",
+      "projectPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Backend-Dev.csproj",
       "packagesPath": "C:\\Users\\wwu98\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\ASP.net\\Backend-Dev\\obj\\",
+      "outputPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
