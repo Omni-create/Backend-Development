@@ -148,9 +148,13 @@ public partial class ApplicationDbContext : DbContext
                 .HasColumnName("reservationStatus");
             entity.Property(e => e.StartDate).HasColumnName("startDate");
             entity.Property(e => e.UserId).HasColumnName("userID");
-
+            entity.Property(e => e.RoomId).HasColumnName("roomID");
             entity.HasOne(d => d.User).WithMany(p => p.Reservations)
                 .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_roomID_Reservation");
+            entity.HasOne(d => d.Rooms).WithMany(p => p.Reservations)
+                .HasForeignKey(d => d.RoomId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_userID_Reservation");
         });
@@ -205,12 +209,6 @@ public partial class ApplicationDbContext : DbContext
                 .IsUnicode(false)
                 .HasDefaultValue("AVAILABLE")
                 .HasColumnName("status");
-
-            entity.HasOne(d => d.Reservation).WithMany(p => p.Rooms)
-                .HasForeignKey(d => d.ReservationId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_reservationID_Room");
-
             entity.HasOne(d => d.RoomType).WithMany(p => p.Rooms)
                 .HasForeignKey(d => d.RoomTypeId)
                 .HasConstraintName("FK_roomTypeID_Room");

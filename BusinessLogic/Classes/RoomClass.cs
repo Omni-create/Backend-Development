@@ -3,7 +3,7 @@ namespace BusinessLogic.Classes
     public class Room
     {
         public int Id { get; set; }
-        public string RoomTypeId { get; set; } // e.g., Single, Double, Suite
+        public string RoomTypeId { get; set; }
         public string Status { get; set; } // e.g., Available, Occupied, Maintenance
 
 

@@ -5,8 +5,9 @@ namespace Backend_Dev.Models;
 
 public partial class ReservedExtraOption
 {
+    [Required]
     public int ExtraOptionId { get; set; }
-
+    [Required]
     public int ReservationId { get; set; }
 
     public virtual ExtraOption ExtraOption { get; set; } = null!;
