@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Backend_Dev.Transfer;
+namespace Presentation.Transfer;
 
 public class CreateUserDto
 {

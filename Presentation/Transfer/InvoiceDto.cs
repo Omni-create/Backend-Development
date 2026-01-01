@@ -1,6 +1,6 @@
 using System;
 
-namespace Backend_Dev.Transfer;
+namespace Presentation.Transfer;
 
 public class InvoiceDto
 {
