@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 namespace HotelApi.Models;
+
 public enum UserRole
 {
     Guest,
@@ -12,17 +13,17 @@ public enum UserRole
 public partial class User
 {
     public int UserId { get; set; }
-[Required]
+    [Required]
     public string Username { get; set; } = null!;
-[Required]
+    [Required]
     public string Password { get; set; } = null!;
     public DateTime? CreatedDate { get; set; }
     public UserRole UserRole { get; set; }
-[Required]
+    [Required]
     public string FirstName { get; set; } = null!;
-[Required]
+    [Required]
     public string LastName { get; set; } = null!;
-[Required]
+    [Required]
     public string Email { get; set; } = null!;
 
     public string Phone { get; set; } = null!;
@@ -30,7 +31,6 @@ public partial class User
     public virtual ICollection<PaymentInfo> PaymentInfos { get; set; } = new List<PaymentInfo>();
 
     public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
-    public bool IsDeleted { get; set; } = false;
     public User()
     {
         PaymentInfos = new List<PaymentInfo>();

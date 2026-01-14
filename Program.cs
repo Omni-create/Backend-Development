@@ -1,6 +1,6 @@
 using HotelApi.Data;
 using Microsoft.EntityFrameworkCore;
-
+using HotelApi;
 
 var builder = WebApplication.CreateBuilder(args);
 

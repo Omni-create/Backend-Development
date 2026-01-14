@@ -26,21 +26,7 @@ namespace HotelApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            // Configure DateOnly conversions (for EF Core 6+)
-            modelBuilder.Entity<Reservation>()
-                .Property(r => r.StartDate)
-                .HasConversion<DateOnlyConverter, DateOnlyComparer>();
-
-            modelBuilder.Entity<Reservation>()
-                .Property(r => r.EndDate)
-                .HasConversion<DateOnlyConverter, DateOnlyComparer>();
-
-            modelBuilder.Entity<Invoice>()
-                .Property(i => i.IssueDate)
-                .HasConversion<DateOnlyConverter, DateOnlyComparer>();
-
+            
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(e => e.UserId).HasName("PK_User");
@@ -55,7 +41,6 @@ namespace HotelApi.Data
                 entity.Property(e => e.FirstName).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.LastName).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.CreatedDate).HasDefaultValueSql("GETDATE()");
-                entity.Property(e => e.IsDeleted).HasDefaultValue(false);
 
                 // Unique constraints
                 entity.HasIndex(e => e.Username).IsUnique();
@@ -231,20 +216,4 @@ namespace HotelApi.Data
         }
     }
 
-    // ADD these converter classes for DateOnly support:
-    public class DateOnlyConverter : ValueConverter<DateOnly, DateTime>
-    {
-        public DateOnlyConverter() : base(
-            dateOnly => dateOnly.ToDateTime(TimeOnly.MinValue),
-            dateTime => DateOnly.FromDateTime(dateTime))
-        { }
-    }
-
-    public class DateOnlyComparer : ValueComparer<DateOnly>
-    {
-        public DateOnlyComparer() : base(
-            (d1, d2) => d1.Equals(d2),
-            d => d.GetHashCode())
-        { }
-    }
 }

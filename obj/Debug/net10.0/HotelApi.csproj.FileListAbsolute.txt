@@ -182,10 +182,7 @@ D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.Build.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.Build.Framework.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.Build.Tasks.Core.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.Build.Utilities.Core.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -207,7 +204,6 @@ D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.NET.StringTools.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.OpenApi.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Mono.TextTemplating.dll
@@ -223,14 +219,9 @@ D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Composition.Runtime.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Composition.TypedParts.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Formats.Nrbf.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Memory.Data.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Reflection.MetadataLoadContext.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Resources.Extensions.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Security.Permissions.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\System.Windows.Extensions.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -314,7 +305,6 @@ D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\HotelApi.csproj.AssemblyReference.cache
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\rpswa.dswa.cache.json
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\HotelApi.GeneratedMSBuildEditorConfig.editorconfig
@@ -339,3 +329,4 @@ D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\HotelApi.pdb
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\HotelApi.genruntimeconfig.cache
 D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\ref\HotelApi.dll
+D:\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
