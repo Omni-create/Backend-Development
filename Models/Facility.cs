@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+namespace HotelApi.Models;
+
+public partial class Facility
+{
+    public int FacilityId { get; set; }
+[Required]
+    public string FacilityName { get; set; } = null!;
+[Required]
+[Column(TypeName = "decimal(10,2)")]
+    public decimal Price { get; set; }
+}
