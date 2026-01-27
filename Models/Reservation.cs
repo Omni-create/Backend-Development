@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace HotelApi.Models;
 
@@ -28,20 +30,21 @@ public partial class Reservation
     
     public ReservationStatus Status { get; set; }
 
-    public virtual User User { get; set; } = null!;
+    [Required]
+    public int RoomId { get; set; }
+
+
+    [JsonIgnore]
+    public virtual User? User { get; set; }
     public virtual ICollection<Invoice> Invoices { get; set; }
     
-    public virtual ICollection<Room> Rooms { get; set; }
+    [JsonIgnore]
+    public virtual Room? Room { get; set; }
     
-    public virtual ICollection<ReservedExtraOption> ReservedExtraOptions { get; private set; }
-    public virtual ICollection<ReservedFacility> ReservedFacilities { get; private set; }
 
     public Reservation()
     {
         Invoices = new List<Invoice>();
-        Rooms = new List<Room>();
-        ReservedExtraOptions = new HashSet<ReservedExtraOption>();
-        ReservedFacilities = new HashSet<ReservedFacility>();
         Status = ReservationStatus.Pending;
     }
     

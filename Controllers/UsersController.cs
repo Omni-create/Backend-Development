@@ -19,17 +19,58 @@ namespace HotelApi.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+         [HttpGet]
+    public async Task<ActionResult<IEnumerable<User>>> GetUsers(
+        [FromQuery] string? username = null,
+        [FromQuery] string? email = null,
+        [FromQuery] UserRole? role = null,
+        [FromQuery] string? firstName = null,
+        [FromQuery] string? lastName = null)
+    {
+        var query = _context.Users.AsQueryable();
+
+        // Filter op username
+        if (!string.IsNullOrEmpty(username))
         {
-            return await _context.Users.ToListAsync();
+            query = query.Where(u => u.Username.Contains(username));
         }
+
+        // Filter op email
+        if (!string.IsNullOrEmpty(email))
+        {
+            query = query.Where(u => u.Email.Contains(email));
+        }
+
+        // Filter op role
+        if (role.HasValue)
+        {
+            query = query.Where(u => u.UserRole == role.Value);
+        }
+
+        // Filter op firstName
+        if (!string.IsNullOrEmpty(firstName))
+        {
+            query = query.Where(u => u.FirstName.Contains(firstName));
+        }
+
+        // Filter op lastName
+        if (!string.IsNullOrEmpty(lastName))
+        {
+            query = query.Where(u => u.LastName.Contains(lastName));
+        }
+
+        return await query.Include(u => u.PaymentInfos)
+            .Include(u => u.Reservations)
+            .ToListAsync();
+    }   
 
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-
+            var user = await _context.Users
+    .Include(u => u.PaymentInfos)
+    .Include(u => u.Reservations)
+    .FirstOrDefaultAsync(u => u.UserId == id);
             if (user == null) return NotFound();
 
             return user;

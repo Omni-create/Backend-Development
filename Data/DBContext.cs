@@ -92,7 +92,7 @@ namespace HotelApi.Data
                 entity.Property(e => e.Status)
                     .HasConversion<string>()  // Convert enum to string
                     .HasMaxLength(50)
-                    .HasDefaultValue(Status.Available);
+                    .HasDefaultValue(RoomStatus.Available);
 
                 entity.HasOne(e => e.RoomType)
                       .WithMany(rt => rt.Rooms)
@@ -113,14 +113,10 @@ namespace HotelApi.Data
                     .HasForeignKey(r => r.UserId)
                     .OnDelete(DeleteBehavior.Restrict);
 
-                // Many-to-many with Rooms
-                entity.HasMany(r => r.Rooms)
-                      .WithMany()
-                      .UsingEntity<Dictionary<string, object>>(
-                          "ReservationRoom",
-                          j => j.HasOne<Room>().WithMany().HasForeignKey("RoomId").OnDelete(DeleteBehavior.Cascade),
-                          j => j.HasOne<Reservation>().WithMany().HasForeignKey("ReservationId").OnDelete(DeleteBehavior.Cascade),
-                          j => j.HasKey("ReservationId", "RoomId"));
+                entity.HasOne(r => r.Room)
+                    .WithMany(r => r.Reservations)
+                    .HasForeignKey(r => r.RoomId)
+                    .OnDelete(DeleteBehavior.Restrict);
 
                 // UPDATED: Check constraint with new syntax
                 entity.ToTable(tb => tb.HasCheckConstraint("CK_Reservation_Dates", "EndDate > StartDate"));

@@ -129,14 +129,21 @@ namespace HotelApi.Migrations
                     ReservationId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValue: "Pending")
+                    StartDate = table.Column<DateOnly>(type: "date", nullable: false),
+                    EndDate = table.Column<DateOnly>(type: "date", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValue: "Pending"),
+                    RoomId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Reservation", x => x.ReservationId);
                     table.CheckConstraint("CK_Reservation_Dates", "EndDate > StartDate");
+                    table.ForeignKey(
+                        name: "FK_Reservations_Rooms_RoomId",
+                        column: x => x.RoomId,
+                        principalTable: "Rooms",
+                        principalColumn: "RoomId",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Reservations_Users_UserId",
                         column: x => x.UserId,
@@ -156,7 +163,7 @@ namespace HotelApi.Migrations
                     Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     TotalCost = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PaymentStatus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false, defaultValue: "Pending"),
-                    IssueDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    IssueDate = table.Column<DateOnly>(type: "date", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -177,36 +184,11 @@ namespace HotelApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ReservationRoom",
-                columns: table => new
-                {
-                    ReservationId = table.Column<int>(type: "int", nullable: false),
-                    RoomId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ReservationRoom", x => new { x.ReservationId, x.RoomId });
-                    table.ForeignKey(
-                        name: "FK_ReservationRoom_Reservations_ReservationId",
-                        column: x => x.ReservationId,
-                        principalTable: "Reservations",
-                        principalColumn: "ReservationId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ReservationRoom_Rooms_RoomId",
-                        column: x => x.RoomId,
-                        principalTable: "Rooms",
-                        principalColumn: "RoomId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ReservedExtraOptions",
                 columns: table => new
                 {
                     ExtraOptionId = table.Column<int>(type: "int", nullable: false),
-                    ReservationId = table.Column<int>(type: "int", nullable: false),
-                    ReservationId1 = table.Column<int>(type: "int", nullable: true)
+                    ReservationId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -223,11 +205,6 @@ namespace HotelApi.Migrations
                         principalTable: "Reservations",
                         principalColumn: "ReservationId",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ReservedExtraOptions_Reservations_ReservationId1",
-                        column: x => x.ReservationId1,
-                        principalTable: "Reservations",
-                        principalColumn: "ReservationId");
                 });
 
             migrationBuilder.CreateTable(
@@ -235,8 +212,7 @@ namespace HotelApi.Migrations
                 columns: table => new
                 {
                     FacilityId = table.Column<int>(type: "int", nullable: false),
-                    ReservationId = table.Column<int>(type: "int", nullable: false),
-                    ReservationId1 = table.Column<int>(type: "int", nullable: true)
+                    ReservationId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -253,11 +229,6 @@ namespace HotelApi.Migrations
                         principalTable: "Reservations",
                         principalColumn: "ReservationId",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ReservedFacilities_Reservations_ReservationId1",
-                        column: x => x.ReservationId1,
-                        principalTable: "Reservations",
-                        principalColumn: "ReservationId");
                 });
 
             migrationBuilder.CreateIndex(
@@ -295,8 +266,8 @@ namespace HotelApi.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ReservationRoom_RoomId",
-                table: "ReservationRoom",
+                name: "IX_Reservations_RoomId",
+                table: "Reservations",
                 column: "RoomId");
 
             migrationBuilder.CreateIndex(
@@ -315,19 +286,9 @@ namespace HotelApi.Migrations
                 column: "ExtraOptionId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ReservedExtraOptions_ReservationId1",
-                table: "ReservedExtraOptions",
-                column: "ReservationId1");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_ReservedFacilities_FacilityId",
                 table: "ReservedFacilities",
                 column: "FacilityId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ReservedFacilities_ReservationId1",
-                table: "ReservedFacilities",
-                column: "ReservationId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Rooms_RoomTypeId",
@@ -360,9 +321,6 @@ namespace HotelApi.Migrations
                 name: "Invoices");
 
             migrationBuilder.DropTable(
-                name: "ReservationRoom");
-
-            migrationBuilder.DropTable(
                 name: "ReservedExtraOptions");
 
             migrationBuilder.DropTable(
@@ -370,9 +328,6 @@ namespace HotelApi.Migrations
 
             migrationBuilder.DropTable(
                 name: "PaymentInfos");
-
-            migrationBuilder.DropTable(
-                name: "Rooms");
 
             migrationBuilder.DropTable(
                 name: "ExtraOptions");
@@ -384,10 +339,13 @@ namespace HotelApi.Migrations
                 name: "Reservations");
 
             migrationBuilder.DropTable(
-                name: "RoomTypes");
+                name: "Rooms");
 
             migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "RoomTypes");
         }
     }
 }

@@ -24,8 +24,9 @@ namespace HotelApi.Controllers
         public async Task<ActionResult<IEnumerable<PaymentInfo>>> GetPaymentInfos()
         {
             return await _context.PaymentInfos
-                .Include(p => p.User)
-                .ToListAsync();
+    .Include(p => p.User)
+    .Include(p => p.Invoices)
+    .ToListAsync();
         }
 
         // GET: api/paymentinfo/{id}
@@ -33,8 +34,9 @@ namespace HotelApi.Controllers
         public async Task<ActionResult<PaymentInfo>> GetPaymentInfo(int id)
         {
             var paymentInfo = await _context.PaymentInfos
-                .Include(p => p.User)
-                .FirstOrDefaultAsync(p => p.PaymentInfoId == id);
+    .Include(p => p.User)
+    .Include(p => p.Invoices)
+    .FirstOrDefaultAsync(p => p.PaymentInfoId == id);
 
             if (paymentInfo == null)
                 return NotFound();

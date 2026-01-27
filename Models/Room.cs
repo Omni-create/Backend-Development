@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 namespace HotelApi.Models;
 
-public enum Status
+public enum RoomStatus
 {
     Maintenance,
     Occupied,
@@ -16,12 +17,15 @@ public partial class Room
     [Required]
     public int RoomTypeId { get; set; }
     [Required]
-    public Status Status { get; set; }
+    public RoomStatus Status { get; set; } = RoomStatus.Available;
 
+    [JsonIgnore]
     public virtual RoomType RoomType { get; set; } = null!;
+
+    public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
 
     public Room()
     {
-        Status = Status.Available;
+        Status = RoomStatus.Available;
     }
 }

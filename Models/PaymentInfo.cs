@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 namespace HotelApi.Models;
 
 public partial class PaymentInfo
@@ -19,5 +20,6 @@ public partial class PaymentInfo
 
     public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
 
+    [JsonIgnore]
     public virtual User User { get; set; } = null!;
 }

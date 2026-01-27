@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 namespace HotelApi.Models;
 
 public enum PaymentStatus
@@ -32,9 +33,10 @@ public partial class Invoice
     
     [Required]
     public DateOnly IssueDate { get; set; }
-
+    [JsonIgnore]
     public virtual PaymentInfo? PaymentInfo { get; set; }
 
+    [JsonIgnore]
     public virtual Reservation Reservation { get; set; } = null!;
     
     public Invoice()

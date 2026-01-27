@@ -25,6 +25,7 @@ namespace HotelApi.Controllers
         {
             return await _context.Rooms
                 .Include(r => r.RoomType)
+                .Include(r => r.Reservations)
                 .ToListAsync();
         }
 
@@ -34,6 +35,7 @@ namespace HotelApi.Controllers
         {
             var room = await _context.Rooms
                 .Include(r => r.RoomType)
+                .Include(r => r.Reservations)
                 .FirstOrDefaultAsync(r => r.RoomId == id);
 
             if (room == null)

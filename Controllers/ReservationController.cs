@@ -25,7 +25,8 @@ namespace HotelApi.Controllers
         {
             return await _context.Reservations
                 .Include(r => r.User)
-                .Include(r => r.Rooms)  // Use plural here
+                .Include(r => r.Room)  // Use plural here
+                .Include(r => r.Invoices)
                 .ToListAsync();
         }
 
@@ -35,7 +36,8 @@ namespace HotelApi.Controllers
         {
             var reservation = await _context.Reservations
                 .Include(r => r.User)
-                .Include(r => r.Rooms)  // Use plural here
+                .Include(r => r.Room)  // Use plural here
+                .Include(r => r.Invoices)
                 .FirstOrDefaultAsync(r => r.ReservationId == id);
 
             if (reservation == null)
@@ -50,6 +52,8 @@ namespace HotelApi.Controllers
         {
             _context.Reservations.Add(reservation);
             await _context.SaveChangesAsync();
+
+            
 
             return CreatedAtAction(nameof(GetReservation), new { id = reservation.ReservationId }, reservation);
         }

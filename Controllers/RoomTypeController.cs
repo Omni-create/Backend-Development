@@ -23,14 +23,16 @@ namespace HotelApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<RoomType>>> GetRoomTypes()
         {
-            return await _context.RoomTypes.ToListAsync();
+            return await _context.RoomTypes.Include(rt => rt.Rooms).ToListAsync();
         }
 
         // GET: api/roomtypes/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<RoomType>> GetRoomType(int id)
         {
-            var roomType = await _context.RoomTypes.FindAsync(id);
+            var roomType = await _context.RoomTypes
+    .Include(rt => rt.Rooms) 
+    .FirstOrDefaultAsync(rt => rt.RoomTypeId == id);
 
             if (roomType == null)
                 return NotFound();
