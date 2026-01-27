@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using HotelApi.Data;
 using HotelApi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -31,7 +28,7 @@ namespace HotelApi.Controllers
         public async Task<ActionResult<RoomType>> GetRoomType(int id)
         {
             var roomType = await _context.RoomTypes
-    .Include(rt => rt.Rooms) 
+    .Include(rt => rt.Rooms)
     .FirstOrDefaultAsync(rt => rt.RoomTypeId == id);
 
             if (roomType == null)

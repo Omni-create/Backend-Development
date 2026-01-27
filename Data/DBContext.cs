@@ -1,8 +1,5 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using System;
 using HotelApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelApi.Data
 {
@@ -26,7 +23,7 @@ namespace HotelApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(e => e.UserId).HasName("PK_User");

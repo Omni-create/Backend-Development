@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using HotelApi.Data;
 using HotelApi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -19,50 +16,50 @@ namespace HotelApi.Controllers
             _context = context;
         }
 
-         [HttpGet]
-    public async Task<ActionResult<IEnumerable<User>>> GetUsers(
-        [FromQuery] string? username = null,
-        [FromQuery] string? email = null,
-        [FromQuery] UserRole? role = null,
-        [FromQuery] string? firstName = null,
-        [FromQuery] string? lastName = null)
-    {
-        var query = _context.Users.AsQueryable();
-
-        // Filter op username
-        if (!string.IsNullOrEmpty(username))
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers(
+       [FromQuery] string? username = null,
+       [FromQuery] string? email = null,
+       [FromQuery] UserRole? role = null,
+       [FromQuery] string? firstName = null,
+       [FromQuery] string? lastName = null)
         {
-            query = query.Where(u => u.Username.Contains(username));
-        }
+            var query = _context.Users.AsQueryable();
 
-        // Filter op email
-        if (!string.IsNullOrEmpty(email))
-        {
-            query = query.Where(u => u.Email.Contains(email));
-        }
+            // Filter op username
+            if (!string.IsNullOrEmpty(username))
+            {
+                query = query.Where(u => u.Username.Contains(username));
+            }
 
-        // Filter op role
-        if (role.HasValue)
-        {
-            query = query.Where(u => u.UserRole == role.Value);
-        }
+            // Filter op email
+            if (!string.IsNullOrEmpty(email))
+            {
+                query = query.Where(u => u.Email.Contains(email));
+            }
 
-        // Filter op firstName
-        if (!string.IsNullOrEmpty(firstName))
-        {
-            query = query.Where(u => u.FirstName.Contains(firstName));
-        }
+            // Filter op role
+            if (role.HasValue)
+            {
+                query = query.Where(u => u.UserRole == role.Value);
+            }
 
-        // Filter op lastName
-        if (!string.IsNullOrEmpty(lastName))
-        {
-            query = query.Where(u => u.LastName.Contains(lastName));
-        }
+            // Filter op firstName
+            if (!string.IsNullOrEmpty(firstName))
+            {
+                query = query.Where(u => u.FirstName.Contains(firstName));
+            }
 
-        return await query.Include(u => u.PaymentInfos)
-            .Include(u => u.Reservations)
-            .ToListAsync();
-    }   
+            // Filter op lastName
+            if (!string.IsNullOrEmpty(lastName))
+            {
+                query = query.Where(u => u.LastName.Contains(lastName));
+            }
+
+            return await query.Include(u => u.PaymentInfos)
+                .Include(u => u.Reservations)
+                .ToListAsync();
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)

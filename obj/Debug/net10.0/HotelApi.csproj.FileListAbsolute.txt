@@ -486,6 +486,7 @@ C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend
 C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\HotelApi.csproj.Up2Date
 C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\HotelApi.dll
 C:\Users\wwu98\OneDrive - Zuyd Hogeschool\Github repositories\BackEndDev\Backend-Development\obj\Debug\net10.0\refint\HotelApi.dll

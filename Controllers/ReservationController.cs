@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using HotelApi.Data;
 using HotelApi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -53,7 +50,7 @@ namespace HotelApi.Controllers
             _context.Reservations.Add(reservation);
             await _context.SaveChangesAsync();
 
-            
+
 
             return CreatedAtAction(nameof(GetReservation), new { id = reservation.ReservationId }, reservation);
         }

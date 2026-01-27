@@ -1,12 +1,11 @@
 using HotelApi.Data;
 using Microsoft.EntityFrameworkCore;
-using HotelApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<DBConnect>(options =>
+builder.Services.AddDbContext<DBConnect>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("HotelDb")));
 
 
@@ -15,8 +14,14 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-    app.UseSwagger();
-    app.UseSwaggerUI();
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<DBConnect>();
+    dbContext.Database.Migrate();
+}
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseAuthorization();
 
