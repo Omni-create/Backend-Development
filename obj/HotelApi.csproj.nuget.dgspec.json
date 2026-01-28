@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj": {}
+    "D:\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj": {
+    "D:\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj",
+        "projectUniqueName": "D:\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj",
         "projectName": "HotelApi",
-        "projectPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj",
-        "packagesPath": "C:\\Users\\wwu98\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\obj\\",
+        "projectPath": "D:\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\HotelApi.csproj",
+        "packagesPath": "C:\\Users\\Redux Gamer\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\wwu98\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Redux Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

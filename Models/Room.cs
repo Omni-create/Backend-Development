@@ -4,9 +4,10 @@ namespace HotelApi.Models;
 
 public enum RoomStatus
 {
+    Available,
     Maintenance,
-    Occupied,
-    Available
+    Occupied
+    
 }
 
 public partial class Room
