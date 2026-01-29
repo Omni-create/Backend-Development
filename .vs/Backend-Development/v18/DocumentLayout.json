@@ -1,26 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\",
+  "WorkspaceRootPath": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\wwu98\\onedrive - zuyd hogeschool\\github repositories\\backenddev\\backend-development\\controllers\\extraoptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:controllers\\extraoptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\wwu98\\onedrive - zuyd hogeschool\\github repositories\\backenddev\\backend-development\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\wwu98\\onedrive - zuyd hogeschool\\github repositories\\backenddev\\backend-development\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\hotelapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:hotelapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\wwu98\\onedrive - zuyd hogeschool\\github repositories\\backenddev\\backend-development\\models\\extraoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\hotelapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:hotelapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\models\\extraoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:models\\extraoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\wwu98\\onedrive - zuyd hogeschool\\github repositories\\backenddev\\backend-development\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\controllers\\extraoptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:controllers\\extraoptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:models\\facility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|c:\\users\\redux gamer\\documents\\backend-development\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8495412E-6285-8EF0-5B45-EDF5D07F2F0F}|HotelApi.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +46,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HotelApi",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\HotelApi.csproj",
+              "RelativeDocumentMoniker": "HotelApi.csproj",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\HotelApi.csproj",
+              "RelativeToolTip": "HotelApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:18:37.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HotelApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\HotelApi.csproj",
+              "RelativeDocumentMoniker": "HotelApi.csproj",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\HotelApi.csproj",
+              "RelativeToolTip": "HotelApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:05:07.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T15:28:40.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T20:25:23.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Models\\Room.cs",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\Room.cs",
+              "RelativeToolTip": "Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T20:24:07.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ExtraOptionController.cs",
-              "DocumentMoniker": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Controllers\\ExtraOptionController.cs",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Controllers\\ExtraOptionController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExtraOptionController.cs",
-              "ToolTip": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Controllers\\ExtraOptionController.cs",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Controllers\\ExtraOptionController.cs",
               "RelativeToolTip": "Controllers\\ExtraOptionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T15:30:00.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Invoice.cs",
-              "DocumentMoniker": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Models\\Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Models\\Invoice.cs",
-              "ToolTip": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Models\\Invoice.cs",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\Invoice.cs",
               "RelativeToolTip": "Models\\Invoice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Facility.cs",
-              "DocumentMoniker": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Models\\Facility.cs",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\Facility.cs",
               "RelativeDocumentMoniker": "Models\\Facility.cs",
-              "ToolTip": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Models\\Facility.cs",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\Facility.cs",
               "RelativeToolTip": "Models\\Facility.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,28 +153,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ExtraOption.cs",
-              "DocumentMoniker": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Models\\ExtraOption.cs",
+              "DocumentMoniker": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\ExtraOption.cs",
               "RelativeDocumentMoniker": "Models\\ExtraOption.cs",
-              "ToolTip": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Models\\ExtraOption.cs",
+              "ToolTip": "C:\\Users\\Redux Gamer\\Documents\\Backend-Development\\Models\\ExtraOption.cs",
               "RelativeToolTip": "Models\\ExtraOption.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T15:29:00.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\wwu98\\OneDrive - Zuyd Hogeschool\\Github repositories\\BackEndDev\\Backend-Development\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:28:40.876Z",
               "EditorCaption": ""
             }
           ]

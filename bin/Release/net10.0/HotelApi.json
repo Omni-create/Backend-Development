@@ -1,0 +1,1614 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "HotelApi | v1",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/ExtraOption": {
+      "get": {
+        "tags": [
+          "ExtraOption"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ExtraOption"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ExtraOption"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ExtraOption"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ExtraOption"
+            }
+          }
+        }
+      }
+    },
+    "/api/ExtraOption/{id}": {
+      "get": {
+        "tags": [
+          "ExtraOption"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ExtraOption"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ExtraOption"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ExtraOption"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ExtraOption"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Facility": {
+      "get": {
+        "tags": [
+          "Facility"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Facility"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Facility"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Facility"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Facility"
+            }
+          }
+        }
+      }
+    },
+    "/api/Facility/{id}": {
+      "get": {
+        "tags": [
+          "Facility"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Facility"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Facility"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Facility"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Facility"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PaymentInfo": {
+      "get": {
+        "tags": [
+          "PaymentInfo"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PaymentInfo"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PaymentInfo"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PaymentInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PaymentInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/PaymentInfo/{id}": {
+      "get": {
+        "tags": [
+          "PaymentInfo"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PaymentInfo"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PaymentInfo"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PaymentInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PaymentInfo"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Reservation": {
+      "get": {
+        "tags": [
+          "Reservation"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Reservation"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Reservation"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Reservation"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Reservation"
+            }
+          }
+        }
+      }
+    },
+    "/api/Reservation/{id}": {
+      "get": {
+        "tags": [
+          "Reservation"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Reservation"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Reservation"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Reservation"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Reservation"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ReservedExtraOption": {
+      "get": {
+        "tags": [
+          "ReservedExtraOption"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ReservedExtraOption"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ReservedExtraOption"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReservedExtraOption"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ReservedExtraOption"
+            }
+          }
+        }
+      }
+    },
+    "/api/ReservedExtraOption/{reservationId}/{extraOptionId}": {
+      "get": {
+        "tags": [
+          "ReservedExtraOption"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "reservationId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "path",
+            "name": "extraOptionId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ReservedExtraOption"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ReservedExtraOption"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "reservationId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "path",
+            "name": "extraOptionId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ReservedFacility": {
+      "get": {
+        "tags": [
+          "ReservedFacility"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ReservedFacility"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ReservedFacility"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReservedFacility"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ReservedFacility"
+            }
+          }
+        }
+      }
+    },
+    "/api/ReservedFacility/{reservationId}/{facilityId}": {
+      "get": {
+        "tags": [
+          "ReservedFacility"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "reservationId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "path",
+            "name": "facilityId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ReservedFacility"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ReservedFacility"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "reservationId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "path",
+            "name": "facilityId",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Room": {
+      "get": {
+        "tags": [
+          "Room"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Room"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Room"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Room"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Room"
+            }
+          }
+        }
+      }
+    },
+    "/api/Room/{id}": {
+      "get": {
+        "tags": [
+          "Room"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Room"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Room"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Room"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Room"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RoomTypes": {
+      "get": {
+        "tags": [
+          "RoomTypes"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RoomType"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RoomTypes"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoomType"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/RoomType"
+            }
+          }
+        }
+      }
+    },
+    "/api/RoomTypes/{id}": {
+      "get": {
+        "tags": [
+          "RoomTypes"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/RoomType"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RoomTypes"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoomType"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RoomTypes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "username",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "email",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "role",
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "firstName",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "lastName",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
+    "/api/Users/{id}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "pattern": "^-?(?:0|[1-9]\\d*)$"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ExtraOption": {
+      "type": "object",
+      "required": [
+        "optionName",
+        "price"
+      ],
+      "properties": {
+        "extraOptionId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "optionName": {
+          "type": "string"
+        },
+        "price": {
+          "format": "double",
+          "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$"
+        }
+      }
+    },
+    "Facility": {
+      "type": "object",
+      "required": [
+        "facilityName",
+        "price"
+      ],
+      "properties": {
+        "facilityId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "facilityName": {
+          "type": "string"
+        },
+        "price": {
+          "format": "double",
+          "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$"
+        }
+      }
+    },
+    "Invoice": {
+      "type": "object",
+      "required": [
+        "reservationId",
+        "totalCost",
+        "paymentStatus",
+        "issueDate"
+      ],
+      "properties": {
+        "invoiceId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "reservationId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "paymentInfoId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$",
+          "x-nullable": true
+        },
+        "description": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "totalCost": {
+          "format": "double",
+          "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$"
+        },
+        "paymentStatus": {
+          "$ref": "#/definitions/PaymentStatus"
+        },
+        "issueDate": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "PaymentInfo": {
+      "type": "object",
+      "properties": {
+        "paymentInfoId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "userId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "lastFourDigits": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "bankHolderName": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "paymentMethod": {
+          "type": "string"
+        },
+        "paymentToken": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "invoices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Invoice"
+          }
+        }
+      }
+    },
+    "PaymentStatus": {
+      "type": "integer"
+    },
+    "Reservation": {
+      "type": "object",
+      "required": [
+        "userId",
+        "startDate",
+        "endDate",
+        "roomId"
+      ],
+      "properties": {
+        "reservationId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "userId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "$ref": "#/definitions/ReservationStatus"
+        },
+        "roomId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "invoices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Invoice"
+          }
+        },
+        "numberOfNights": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        }
+      }
+    },
+    "ReservationStatus": {
+      "type": "integer"
+    },
+    "ReservedExtraOption": {
+      "type": "object",
+      "required": [
+        "extraOptionId",
+        "reservationId"
+      ],
+      "properties": {
+        "extraOptionId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "reservationId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "extraOption": {
+          "$ref": "#/definitions/ExtraOption"
+        },
+        "reservation": {
+          "$ref": "#/definitions/Reservation"
+        }
+      }
+    },
+    "ReservedFacility": {
+      "type": "object",
+      "required": [
+        "facilityId",
+        "reservationId"
+      ],
+      "properties": {
+        "facilityId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "reservationId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "facility": {
+          "$ref": "#/definitions/Facility"
+        },
+        "reservation": {
+          "$ref": "#/definitions/Reservation"
+        }
+      }
+    },
+    "Room": {
+      "type": "object",
+      "required": [
+        "roomTypeId",
+        "status"
+      ],
+      "properties": {
+        "roomId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "roomTypeId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "status": {
+          "$ref": "#/definitions/RoomStatus"
+        },
+        "reservations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reservation"
+          }
+        }
+      }
+    },
+    "RoomStatus": {
+      "type": "integer"
+    },
+    "RoomType": {
+      "type": "object",
+      "required": [
+        "capacity",
+        "type",
+        "pricePerNight"
+      ],
+      "properties": {
+        "roomTypeId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "capacity": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "description": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "type": {
+          "type": "string"
+        },
+        "pricePerNight": {
+          "format": "double",
+          "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$"
+        },
+        "rooms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Room"
+          }
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "required": [
+        "username",
+        "password",
+        "firstName",
+        "lastName",
+        "email"
+      ],
+      "properties": {
+        "userId": {
+          "format": "int32",
+          "pattern": "^-?(?:0|[1-9]\\d*)$"
+        },
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string",
+          "format": "date-time",
+          "x-nullable": true
+        },
+        "userRole": {
+          "$ref": "#/definitions/UserRole"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "paymentInfos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PaymentInfo"
+          }
+        },
+        "reservations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reservation"
+          }
+        }
+      }
+    },
+    "UserRole": {
+      "type": "integer"
+    }
+  },
+  "tags": [
+    {
+      "name": "ExtraOption"
+    },
+    {
+      "name": "Facility"
+    },
+    {
+      "name": "PaymentInfo"
+    },
+    {
+      "name": "Reservation"
+    },
+    {
+      "name": "ReservedExtraOption"
+    },
+    {
+      "name": "ReservedFacility"
+    },
+    {
+      "name": "Room"
+    },
+    {
+      "name": "RoomTypes"
+    },
+    {
+      "name": "Users"
+    }
+  ]
+}
