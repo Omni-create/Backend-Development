@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/apimgmt-lmar-prd-gite01/apis/webapi-lmar-prd-gite01",
+      "type": "apis.azure"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+"laptop": {
+    "HotelDb": "Data Source=MINECRAFT;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Application Name=\"Microsoft SQL Server Management Studio - Query\";Command Timeout=0; Database=Test"
+  },
